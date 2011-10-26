@@ -29,4 +29,5 @@
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
 
+- (id)initWithNSDictionary:(NSDictionary*) dictionary;
 @end
