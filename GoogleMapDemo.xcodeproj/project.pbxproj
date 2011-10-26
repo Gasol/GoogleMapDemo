@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9037836145337E6008FB9E0 /* PlacesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F9037835145337E6008FB9E0 /* PlacesAPI.m */; };
+		F91D7355145849DD00B488B3 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D7354145849DD00B488B3 /* Place.m */; };
 		F999CD611452BB3E002C86E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999CD601452BB3E002C86E7 /* UIKit.framework */; };
 		F999CD631452BB3E002C86E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999CD621452BB3E002C86E7 /* Foundation.framework */; };
 		F999CD651452BB3E002C86E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999CD641452BB3E002C86E7 /* CoreGraphics.framework */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F9037834145337E6008FB9E0 /* PlacesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesAPI.h; sourceTree = "<group>"; };
+		F9037835145337E6008FB9E0 /* PlacesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesAPI.m; sourceTree = "<group>"; };
+		F91D7353145849DD00B488B3 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		F91D7354145849DD00B488B3 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		F999CD5C1452BB3E002C86E7 /* GoogleMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F999CD601452BB3E002C86E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F999CD621452BB3E002C86E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +83,10 @@
 		F999CD661452BB3E002C86E7 /* GoogleMapDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F91D7353145849DD00B488B3 /* Place.h */,
+				F91D7354145849DD00B488B3 /* Place.m */,
+				F9037834145337E6008FB9E0 /* PlacesAPI.h */,
+				F9037835145337E6008FB9E0 /* PlacesAPI.m */,
 				F999CD6F1452BB3E002C86E7 /* AppDelegate.h */,
 				F999CD701452BB3E002C86E7 /* AppDelegate.m */,
 				F999CD721452BB3E002C86E7 /* ViewController.h */,
@@ -163,6 +173,8 @@
 				F999CD6D1452BB3E002C86E7 /* main.m in Sources */,
 				F999CD711452BB3E002C86E7 /* AppDelegate.m in Sources */,
 				F999CD741452BB3E002C86E7 /* ViewController.m in Sources */,
+				F9037836145337E6008FB9E0 /* PlacesAPI.m in Sources */,
+				F91D7355145849DD00B488B3 /* Place.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
