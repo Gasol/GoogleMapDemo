@@ -51,15 +51,17 @@
     [error release];
     
     NSString *status = [json objectForKey:@"status"];
-    NSMutableArray *retArray = [[[NSMutableArray alloc] init] autorelease];
     if ([status isEqualToString:@"OK"]) {
+        NSMutableArray *places = [[NSMutableArray alloc] init];
         NSArray *results = [json objectForKey: @"results"];
         for (NSDictionary *item in results) {
             Place *place = [[[Place alloc] initWithNSDictionary:item] autorelease];          
-            [retArray addObject:place];
+            [places addObject:place];
         }
         
-        return [NSArray arrayWithArray:retArray]; 
+        NSArray *retArray = [NSArray arrayWithArray:places];
+        [places release];
+        return retArray;
     }
     
     return nil;
