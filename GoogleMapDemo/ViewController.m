@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-
+@interface ViewController()
+- (void)startStandardUpdates;
+@end
 
 @implementation ViewController
 @synthesize searchBar;
