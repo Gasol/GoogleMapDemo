@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-@interface Place : NSObject
+@interface Place : NSObject<MKAnnotation>
 {
     NSString *placeId;
     NSArray *types;
@@ -30,4 +31,5 @@
 @property (nonatomic) double longitude;
 
 - (id)initWithNSDictionary:(NSDictionary*) dictionary;
+
 @end

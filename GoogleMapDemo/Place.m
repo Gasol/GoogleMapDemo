@@ -38,6 +38,22 @@
     return self;
 }
 
+- (NSString*)title
+{
+    return self.name;
+}
+
+- (NSString*)subtitle
+{
+    return self.vicinity;
+}
+
+- (CLLocationCoordinate2D)coordinate
+{
+    CLLocationCoordinate2D coordinate = {self.latitude, self.longitude};
+    return coordinate;
+}
+
 - (void)dealloc {
     [placeId release];
     [name release];

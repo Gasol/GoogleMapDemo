@@ -9,14 +9,16 @@
 #import "MapController.h"
 
 @implementation MapController
+@synthesize mapView;
+@synthesize place;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithPlace: (Place*) aPlace
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self = [super init]) {
+        self.place = aPlace;
     }
     return self;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,10 +35,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.title = self.place.name;
+    
+    MKCoordinateRegion region;
+    region.center.latitude = self.place.latitude;
+    region.center.longitude = self.place.longitude;
+    
+    MKCoordinateSpan span;
+    span.latitudeDelta  = .002;
+    span.longitudeDelta = .002;
+    region.span = span;
+    [self.mapView setRegion:region animated:YES];
+    [self.mapView selectAnnotation:self.place animated:YES];
 }
 
 - (void)viewDidUnload
 {
+    [self setMapView:nil];
+    [self setPlace:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -48,4 +64,9 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+    [mapView release];
+    [place release];
+    [super dealloc];
+}
 @end

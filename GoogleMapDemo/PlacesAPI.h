@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CoreLocation/CLLocation.h"
 
-#define API_KEY @"your key"
+#define API_KEY @"AIzaSyBvO0jNYgXgOlVUUVKaR2fI0bc4JFWqhKM"
 #define BASE_URL @"https://maps.googleapis.com/maps/api/place/search/json"
 
 @interface PlacesAPI : NSObject

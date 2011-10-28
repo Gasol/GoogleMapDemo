@@ -7,6 +7,7 @@
 //
 
 #import "PlaceController.h"
+#import "MapController.h"
 
 @interface PlaceController()
 - (void)startStandardUpdates;
@@ -146,6 +147,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSUInteger count = [self.tableData count];
     return count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Place *place = [self.tableData objectAtIndex:indexPath.row];
+    MapController *mapController = [[[MapController alloc] initWithPlace:place] autorelease];
+    [self.navigationController pushViewController:mapController animated:YES];
 }
 
 - (void)locationManager:(CLLocationManager *)manager
