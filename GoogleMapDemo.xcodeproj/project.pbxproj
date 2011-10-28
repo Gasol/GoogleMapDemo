@@ -28,6 +28,9 @@
 		F999CD711452BB3E002C86E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F999CD701452BB3E002C86E7 /* AppDelegate.m */; };
 		F999CD741452BB3E002C86E7 /* PlaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F999CD731452BB3E002C86E7 /* PlaceController.m */; };
 		F999CD771452BB3E002C86E7 /* PlaceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F999CD751452BB3E002C86E7 /* PlaceController.xib */; };
+		F9F5A995145AFB4200BCA9F0 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F5A993145AFB4200BCA9F0 /* MapController.m */; };
+		F9F5A996145AFB4200BCA9F0 /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F5A994145AFB4200BCA9F0 /* MapController.xib */; };
+		F9F5A998145AFD2A00BCA9F0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F5A997145AFD2A00BCA9F0 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,10 @@
 		F999CD721452BB3E002C86E7 /* PlaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceController.h; sourceTree = "<group>"; };
 		F999CD731452BB3E002C86E7 /* PlaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceController.m; sourceTree = "<group>"; };
 		F999CD761452BB3E002C86E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PlaceController.xib; sourceTree = "<group>"; };
+		F9F5A992145AFB4200BCA9F0 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		F9F5A993145AFB4200BCA9F0 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		F9F5A994145AFB4200BCA9F0 /* MapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
+		F9F5A997145AFD2A00BCA9F0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F5A998145AFD2A00BCA9F0 /* MapKit.framework in Frameworks */,
 				F91D737C1458866900B488B3 /* CoreLocation.framework in Frameworks */,
 				F999CD611452BB3E002C86E7 /* UIKit.framework in Frameworks */,
 				F999CD631452BB3E002C86E7 /* Foundation.framework in Frameworks */,
@@ -163,6 +171,7 @@
 		F999CD5F1452BB3E002C86E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9F5A997145AFD2A00BCA9F0 /* MapKit.framework */,
 				F91D737B1458866900B488B3 /* CoreLocation.framework */,
 				F999CD601452BB3E002C86E7 /* UIKit.framework */,
 				F999CD621452BB3E002C86E7 /* Foundation.framework */,
@@ -174,6 +183,9 @@
 		F999CD661452BB3E002C86E7 /* GoogleMapDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F9F5A992145AFB4200BCA9F0 /* MapController.h */,
+				F9F5A993145AFB4200BCA9F0 /* MapController.m */,
+				F9F5A994145AFB4200BCA9F0 /* MapController.xib */,
 				F91D7353145849DD00B488B3 /* Place.h */,
 				F91D7354145849DD00B488B3 /* Place.m */,
 				F9037834145337E6008FB9E0 /* PlacesAPI.h */,
@@ -251,6 +263,7 @@
 			files = (
 				F999CD6B1452BB3E002C86E7 /* InfoPlist.strings in Resources */,
 				F999CD771452BB3E002C86E7 /* PlaceController.xib in Resources */,
+				F9F5A996145AFB4200BCA9F0 /* MapController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +289,7 @@
 				F91D737614584D5000B488B3 /* CJSONDeserializer.m in Sources */,
 				F91D737714584D5000B488B3 /* CJSONScanner.m in Sources */,
 				F91D737814584D5000B488B3 /* CJSONSerializer.m in Sources */,
+				F9F5A995145AFB4200BCA9F0 /* MapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
