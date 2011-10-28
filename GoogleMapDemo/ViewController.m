@@ -33,6 +33,7 @@
 {
     [super viewDidLoad];	// Do any additional setup after loading the view, typically from a nib.
     
+    self.navigationItem.title = @"Nearby Place";
     self.tableData = [[NSMutableArray alloc] init];
     self.api = [[PlacesAPI alloc] initWithApiKey:API_KEY sensor:YES];
     [self startStandardUpdates];

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CoreLocation/CLLocation.h"
 
 #define API_KEY @"your key"
 #define BASE_URL @"https://maps.googleapis.com/maps/api/place/search/json"
