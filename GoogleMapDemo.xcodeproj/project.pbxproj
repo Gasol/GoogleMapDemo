@@ -26,8 +26,8 @@
 		F999CD6B1452BB3E002C86E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F999CD691452BB3E002C86E7 /* InfoPlist.strings */; };
 		F999CD6D1452BB3E002C86E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F999CD6C1452BB3E002C86E7 /* main.m */; };
 		F999CD711452BB3E002C86E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F999CD701452BB3E002C86E7 /* AppDelegate.m */; };
-		F999CD741452BB3E002C86E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F999CD731452BB3E002C86E7 /* ViewController.m */; };
-		F999CD771452BB3E002C86E7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F999CD751452BB3E002C86E7 /* ViewController.xib */; };
+		F999CD741452BB3E002C86E7 /* PlaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F999CD731452BB3E002C86E7 /* PlaceController.m */; };
+		F999CD771452BB3E002C86E7 /* PlaceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F999CD751452BB3E002C86E7 /* PlaceController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,9 +67,9 @@
 		F999CD6E1452BB3E002C86E7 /* GoogleMapDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleMapDemo-Prefix.pch"; sourceTree = "<group>"; };
 		F999CD6F1452BB3E002C86E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F999CD701452BB3E002C86E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F999CD721452BB3E002C86E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F999CD731452BB3E002C86E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F999CD761452BB3E002C86E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F999CD721452BB3E002C86E7 /* PlaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceController.h; sourceTree = "<group>"; };
+		F999CD731452BB3E002C86E7 /* PlaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceController.m; sourceTree = "<group>"; };
+		F999CD761452BB3E002C86E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PlaceController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,9 +180,9 @@
 				F9037835145337E6008FB9E0 /* PlacesAPI.m */,
 				F999CD6F1452BB3E002C86E7 /* AppDelegate.h */,
 				F999CD701452BB3E002C86E7 /* AppDelegate.m */,
-				F999CD721452BB3E002C86E7 /* ViewController.h */,
-				F999CD731452BB3E002C86E7 /* ViewController.m */,
-				F999CD751452BB3E002C86E7 /* ViewController.xib */,
+				F999CD721452BB3E002C86E7 /* PlaceController.h */,
+				F999CD731452BB3E002C86E7 /* PlaceController.m */,
+				F999CD751452BB3E002C86E7 /* PlaceController.xib */,
 				F999CD671452BB3E002C86E7 /* Supporting Files */,
 			);
 			path = GoogleMapDemo;
@@ -250,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F999CD6B1452BB3E002C86E7 /* InfoPlist.strings in Resources */,
-				F999CD771452BB3E002C86E7 /* ViewController.xib in Resources */,
+				F999CD771452BB3E002C86E7 /* PlaceController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +263,7 @@
 			files = (
 				F999CD6D1452BB3E002C86E7 /* main.m in Sources */,
 				F999CD711452BB3E002C86E7 /* AppDelegate.m in Sources */,
-				F999CD741452BB3E002C86E7 /* ViewController.m in Sources */,
+				F999CD741452BB3E002C86E7 /* PlaceController.m in Sources */,
 				F9037836145337E6008FB9E0 /* PlacesAPI.m in Sources */,
 				F91D7355145849DD00B488B3 /* Place.m in Sources */,
 				F91D736F14584D5000B488B3 /* CDataScanner.m in Sources */,
@@ -290,12 +290,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F999CD751452BB3E002C86E7 /* ViewController.xib */ = {
+		F999CD751452BB3E002C86E7 /* PlaceController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F999CD761452BB3E002C86E7 /* en */,
 			);
-			name = ViewController.xib;
+			name = PlaceController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

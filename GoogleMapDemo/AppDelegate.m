@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "PlaceController.h"
 
 @implementation AppDelegate
 
@@ -25,7 +25,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    ViewController *viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+    PlaceController *viewController = [[[PlaceController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     navigationController = [[UINavigationController alloc] initWithRootViewController: viewController];
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];

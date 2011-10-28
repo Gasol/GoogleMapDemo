@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@class PlaceController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

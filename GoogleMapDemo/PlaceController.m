@@ -6,13 +6,13 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PlaceController.h"
 
-@interface ViewController()
+@interface PlaceController()
 - (void)startStandardUpdates;
 @end
 
-@implementation ViewController
+@implementation PlaceController
 @synthesize searchBar;
 @synthesize tableView;
 @synthesize tableData;

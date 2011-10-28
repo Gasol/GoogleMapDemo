@@ -11,7 +11,7 @@
 #import "PlacesAPI.h"
 #import "Place.h"
 
-@interface ViewController : UIViewController<UISearchBarDelegate, UITableViewDataSource, CLLocationManagerDelegate>
+@interface PlaceController : UIViewController<UISearchBarDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 {
     UISearchBar *searchBar;
     UITableView *tableView;
